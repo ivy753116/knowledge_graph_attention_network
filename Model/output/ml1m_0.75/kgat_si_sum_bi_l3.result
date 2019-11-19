@@ -1,0 +1,8 @@
+embed_size=64, lr=0.0001, layer_size=[64,32,16], node_dropout=[0.1], mess_dropout=[0.1,0.1,0.1], regs=[1e-5,1e-5], adj_type=si, use_att=True, use_kge=True
+	Best Iter=[17]@[15127.9]	recall=[0.03110	0.16804	0.55917], precision=[0.35241	0.22001	0.08808], hit=[0.35241	0.79676	0.97080], ndcg=[0.35241	0.31032	0.53587]
+embed_size=64, lr=0.0001, layer_size=[64,32,16], node_dropout=[0.1], mess_dropout=[0.1,0.1,0.1], regs=[1e-5,1e-5], adj_type=si, use_att=True, use_kge=True
+	Best Iter=[3]@[7348.8]	recall=[0.03205	0.17207	0.56538], precision=[0.35658	0.22398	0.08927], hit=[0.35658	0.80394	0.97163], ndcg=[0.35658	0.31459	0.53946]
+embed_size=64, lr=0.0001, layer_size=[64,32,16], node_dropout=[0.1], mess_dropout=[0.1,0.1,0.1], regs=[1e-5,1e-5], adj_type=si, use_att=True, use_kge=True
+	Best Iter=[0]@[862.3]	recall=[0.03151	0.17195	0.56681], precision=[0.35308	0.22513	0.08946], hit=[0.35308	0.80527	0.97213], ndcg=[0.35308	0.31429	0.53959]
+embed_size=64, lr=0.0001, layer_size=[64,32,16], node_dropout=[0.1], mess_dropout=[0.1,0.1,0.1], regs=[1e-5,1e-5], adj_type=si, use_att=True, use_kge=True
+	Best Iter=[2]@[4080.4]	recall=[0.03176	0.17398	0.56966], precision=[0.35525	0.22708	0.09005], hit=[0.35525	0.80894	0.97247], ndcg=[0.35525	0.31667	0.54127]

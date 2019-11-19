@@ -42,7 +42,7 @@ def load_data(data_name):
 
     #Load item to kg map data; return item_dict[item link on dbpedia]: item id on movielens
     item_dict = defaultdict(list)
-    with open("./"+data_name+"/raw_data/i2kg_map.tsv") as f:
+    with open("./"+data_name+"/raw_data/i2kg_map_0.00.tsv") as f:
         for line in f:
             line = line.split()
             item_dict[line[-1]].append(line[0].strip())
@@ -184,6 +184,6 @@ def gen_kgat(data_name, train_dict, test_dict, negative_dict, entity_dict, user_
             f.write(user_index_dict[i]+" "+" ".join([item_index_dict[j] for j in negative_dict[i]])+"\n")
 
 if __name__ == '__main__':
-    data_name = 'ml1m'
+    data_name = 'ml1m_0.00'
     train_dict, test_dict, negative_dict, entity_dict, user_list, item_list, entity_1_list, entity_2_list, relation_dict, relation_list, item_dict = load_data(data_name) # data loader
     gen_kgat(data_name, train_dict, test_dict, negative_dict, entity_dict, user_list, item_list, entity_1_list, entity_2_list, relation_dict, relation_list, item_dict)
